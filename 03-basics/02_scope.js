@@ -26,8 +26,57 @@ let a = 300
 if (true){
     let a = 52
     const b =45
-    console.log("inner: " ,a);//block scope
+    // console.log("inner: " ,a);//block scope
     
 }
 
-console.log(a);//global scope
+// console.log(a);//global scope
+
+
+//  ***************Nested scope*************************
+
+function one(){
+    const username = "Harry"
+
+    function two(){
+        const website = "youTube"
+        // console.log(username);
+        
+    }
+    // console.log(website);// because it is declared outside the scope it will not dipaly the website name.
+
+    two()//we are calling the function
+}
+
+one()
+
+
+if(true){
+    const username = "Harry"
+    if(username==="Harry"){
+        const website = "Code with "
+        // console.log(website + username);
+    }
+    // console.log(website);
+    
+}
+// console.log(username);
+
+
+//*********************************Hoisting******************************* */
+
+console.log(addOne(20))  // HERE FOR A NORMAL FUNCTION VALUES CAN BE INITIALISED BEFORE THE FUNCTION
+
+function addOne(num){
+     return num + 1
+}
+
+// addTwo(25)                          //]/*
+const addTwo = function(num){          //]  WE CANNOT INITIALISE A VALUE BEFFORE THE FUNCTION BECAUSE WE ARE STORING THE FUNCTION
+                                       //]  IN A VARIABLE.
+return addTwo + 5                      //]  THIS IS CALLED AS HOISTING.
+}                                      //]
+addTwo(15)                             //]*/
+
+
+
