@@ -1,0 +1,13 @@
+Java Script is single threaded 
+Java Script Execution Context
+-> it will show you how a code is executed in Java Script
+There are two phases 
+
+1.Global Execution Context. we 'THIS' varibale in this context.
+2.Functional Execution Context.
+3.Eval Execution Context.
+
+example:
+->{} this is a block of code in JavaScript. we have two phases where it shows how our code runs.
+1. first one is memory creation phase.It is  also called as creation phase.Here it allocates place to the variable or anything else we declare there. But it will not get executed.
+2. second one is Execution phase. 
