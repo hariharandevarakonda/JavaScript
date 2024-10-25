@@ -38,7 +38,7 @@ if (userLoogedIn && guestUser && false) {                          // checking m
     
 }
 
-if (loggedInFromGoogle || loggedInFromEmail) {          //checking conditions using pipelines ||
+if (loggedInFromGoogle || loggedInFromEmail) {          //checking conditions using pipelines ||(or operator)
     console.log("Allow user to login");  
     
 }
