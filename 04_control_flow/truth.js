@@ -26,3 +26,23 @@ if (Object.keys(empobj).length == 0) {
     console.log("empty object");
     
 }
+
+//Nullish  Coalescing Operator (??): null undefined
+
+let val1;
+// val1 =5 ?? 56
+// val1 = null ?? 45
+// val1 = undefined ?? 78
+val1 = null ?? 45 ??87
+
+
+console.log(val1);
+
+// terinary operator
+
+// condition ? true: false
+
+const iceCreamPrice = 150
+
+iceCreamPrice <=100 ? console.log("less than 150"): console.log("More than 100");
+
