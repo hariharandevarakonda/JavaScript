@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style="background-color: chartreuse; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = 'main'
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute('title','day-34 of js')
+    div.style.backgroundColor = 'black'
+    div.style.padding = '20px'
+    div.style.textAlign = 'center'
+    div.style.display = 'inline'
+    div.style.borderRadius = '10px'
+    div.style.margin = "30px"
+    div.style.paddingTop = "30px"
+    
+    // div.innerText = 'chai aur code'
+    const addText = document.createTextNode('chai aur code with js')
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+</script>
+</html>
